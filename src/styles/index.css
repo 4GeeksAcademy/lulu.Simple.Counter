@@ -1,14 +1,20 @@
 
 body {
-    background-color: antiquewhite;
+    background-color: black;
 }
 
-.clock, .numbers{
+.clock /* .numbers */{
         font-size: 100px;
         padding: 10px;
         margin: 10px;
+        color: palevioletred;
     }
-
+.numbers {
+    font-size: 100px;
+    padding: 10px;
+    margin: 10px;
+    color: purple;
+}
 
 /* 
 

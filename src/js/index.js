@@ -9,28 +9,19 @@ import PropTypes from "prop-types";
 //import your own components
 var SimpleTimer = (props) =>{
     return(
-        <div className ="d-flex bg-dark text-white py-3 justify-content-center">
+        <div className ="d-flex bg-white text-white py-3 justify-content-center">
             <div className = "clock">
              <i className ="far fa-clock"></i>
             </div>
-            <div className="numbers">{props.placeSix % 10}</div>
-            <div className="numbers">{props.placeFive % 10}</div>
-            <div className="numbers">{props.placeFour % 10}</div>
-            <div className="numbers">{props.placeThree % 10}</div>
-            <div className="numbers">{props.placeTwo % 10}</div>
-            <div className="numbers">{props.placeOne % 10}</div>
+            <div className="numbers">{props.placeSix % 50}</div>
+            <div className="numbers">{props.placeFive % 50}</div>
+            <div className="numbers">{props.placeFour % 50}</div>
+            <div className="numbers">{props.placeThree % 50}</div>
+            <div className="numbers">{props.placeTwo % 50}</div>
+            <div className="numbers">{props.placeOne % 50}</div>
         </div>
         
     )
-}
-
-SimpleTimer.propTypes = {
-    placeSix: PropTypes.number,
-    placeFive: PropTypes.number,
-    placeFour: PropTypes.number,
-    placeThree: PropTypes.number,
-    placeTwo: PropTypes.number,
-    placeOne: PropTypes.number,
 }
 
 let timer = 0;
